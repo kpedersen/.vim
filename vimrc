@@ -7,12 +7,11 @@ set showmode
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
-let g:solarized_termcolors=256
 let g:go_fmt_autosave = 1
 "
 syntax enable
-set background=dark
-colorscheme solarized
+set termguicolors
+colorscheme solarized-osaka-night
 
 " automatically set and unset paste mode
 let &t_SI .= "\<Esc>[?2004h"
